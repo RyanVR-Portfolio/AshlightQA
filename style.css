@@ -1,0 +1,132 @@
+:root {
+--bg-dark: #1B1F3A;
+--purple-accent: #53354A;
+--orange-dark: #A64942;
+--orange-bright: #FF7844;
+--font-light: #f0f0f0;
+--font-muted: #c0c0c0;
+--font-ash: #9f9393; 
+}
+
+
+/* Elements */
+body {
+    background-color: var(--bg-dark);
+}
+
+/* Classes */
+/* Flex */
+.flex-container {
+    background-color: var(--bg-dark);
+}
+
+/* Images */
+.img-lantern {
+    display: inline-block !important;
+    vertical-align: bottom !important;
+}
+
+/* Bootstrap */
+.custom-pill {
+    
+    background-color: var(--purple-accent) !important;
+    color: var(--orange-bright) !important;
+    font-family: "Cinzel", serif !important;
+    font-weight: 600 !important;
+    padding: 0rem 1rem !important;
+    border-radius: 2rem !important;
+    margin: 0rem 1.25rem !important;
+}
+
+/* Font */
+.brand-ash {
+    color: var(--font-ash);
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.brand-light {
+    color: var(--orange-bright);
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+/* Font Snippets */
+/* Cinzel */
+.cinzel-regular {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-medium {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cinzel-semibold {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cinzel-bold {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-extrabold {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.cinzel-black {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Cinzel Decorative */
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Roboto */
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* IDs */
