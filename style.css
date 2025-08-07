@@ -27,6 +27,10 @@ footer {
 }
 
 /* Sections */
+.feature-card {
+  background-color: var(--font-light);
+}
+
 footer .nav-link {
   color: var(--font-muted)
 }
