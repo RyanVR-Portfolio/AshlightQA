@@ -6,24 +6,49 @@
 --font-light: #f0f0f0;
 --font-muted: #c0c0c0;
 --font-ash: #9f9393; 
+background-color: #1B1F3A;
 }
 
 
 /* Elements */
 body {
-    background-color: var(--bg-dark);
+  background-color: var(--bg-dark);
+}
+
+footer {
+  background-color: var(--bg-dark);
+  color: var(--orange-bright);
 }
 
 /* Classes */
 /* Flex */
 .flex-container {
-    background-color: var(--bg-dark);
+  background-color: var(--bg-dark);
+}
+
+/* Sections */
+footer .nav-link {
+  color: var(--font-muted)
+}
+
+footer .copyright {
+  color: var(--font-muted)
 }
 
 /* Images */
 .img-lantern {
-    display: inline-block !important;
-    vertical-align: bottom !important;
+  display: inline-block !important;
+  vertical-align: bottom !important;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+}
+
+footer .icon {
+  height: 48px;
+  width: 48px;
 }
 
 /* Bootstrap */
@@ -35,7 +60,7 @@ body {
     font-weight: 600 !important;
     padding: 0rem 1rem !important;
     border-radius: 2rem !important;
-    margin: 0rem 1.25rem !important;
+    margin: 0rem .25rem !important;
 }
 
 /* Font */

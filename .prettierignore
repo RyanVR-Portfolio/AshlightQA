@@ -1,0 +1,15 @@
+# Assets
+*.png
+*.svg
+*.jpg
+*.jpeg
+*.gif
+assets/
+
+# Config files
+.gitattributes
+.gitignore
+
+# Prettier
+.prettierignore
+.prettierrc
