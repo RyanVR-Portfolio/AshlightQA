@@ -40,6 +40,28 @@ footer .copyright {
 }
 
 /* Images */
+.jumbo-bg {
+  position: relative;
+  background-image: url('./assets/AshlightPath.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--font-light);
+}
+
+.jumbo-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.jumbo-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
 .img-lantern {
   height: 75px;
   display: inline-block !important;
@@ -84,6 +106,14 @@ footer .icon {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+}
+
+.jumbo-h1 {
+  font-weight: 700;
+}
+
+.jumbo-p {
+  font-weight: 500;
 }
 
 /* Font Snippets */
