@@ -11,9 +11,8 @@
 
 /* Elements */
 body {
-  background-image: url('./assets/AshlightBG.png');
-  background-repeat: repeat;
-  background-blend-mode: multiply;
+  background-color: var(--bg-dark);
+  background-image: url('./assets/Shattered-Dark-BG.png');
 }
 
 footer {
