@@ -6,37 +6,40 @@
 --font-light: #f0f0f0;
 --font-muted: #c0c0c0;
 --font-ash: #9f9393; 
-background-color: #1B1F3A;
 }
 
 
 /* Elements */
 body {
-  background-color: var(--bg-dark);
+  background-image: url('./assets/AshlightBG.png');
+  background-repeat: repeat;
+  background-blend-mode: multiply;
 }
 
 footer {
-  background-color: var(--bg-dark);
+  /* background-color: var(--bg-dark); */
   color: var(--orange-bright);
 }
 
 /* Classes */
 /* Flex */
-.flex-container {
-  background-color: var(--bg-dark);
-}
+/* .flex-container {
+} */
 
 /* Sections */
 .feature-card {
-  background-color: var(--font-light);
+  background-color: var(--font-muted);
+  height: 100%;
+  border-radius: .50rem
 }
 
 footer .nav-link {
-  color: var(--font-muted)
+  color: var(--font-muted);
 }
 
 footer .copyright {
-  color: var(--font-muted)
+  color: var(--font-muted);
+  
 }
 
 /* Images */
@@ -110,11 +113,28 @@ footer .icon {
 
 .jumbo-h1 {
   font-weight: 700;
+  font-family: "Cinzel", serif;
+
 }
 
 .jumbo-p {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.50rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.feature-card > h3 {
+  font-family: "Cinzel Decorative", serif;
+  padding: .5rem;
+}
+
+.feature-card > p {
+  font-family: "Roboto", sans-serif;
+  padding: .5rem;
+}
+
+footer .nav-item {
+    font-family: "Cinzel Decorative", serif;
 }
 
 /* Font Snippets */
