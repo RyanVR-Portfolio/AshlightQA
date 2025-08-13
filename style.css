@@ -11,12 +11,11 @@
 
 /* Elements */
 body {
-  background-color: var(--bg-dark);
+  background-color: black;
   background-image: url('./assets/Shattered-Dark-BG.png');
 }
 
 footer {
-  /* background-color: var(--bg-dark); */
   color: var(--orange-bright);
 }
 
