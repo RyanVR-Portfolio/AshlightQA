@@ -1,5 +1,6 @@
 :root {
 --bg-dark: #1B1F3A;
+--bg-purple: #1f062b;
 --purple-accent: #53354A;
 --orange-dark: #A64942;
 --orange-bright: #FF7844;
@@ -11,8 +12,9 @@
 
 /* Elements */
 body {
-  background-color: black;
-  background-image: url('./assets/Shattered-Dark-BG.png');
+    background-color: var(--bg-purple) !important;
+    background-image: url('./assets/washi.png');
+    background-blend-mode: multiply;
 }
 
 footer {
@@ -22,6 +24,7 @@ footer {
 /* Classes */
 /* Flex */
 /* .flex-container {
+  background: none;
 } */
 
 /* Sections */
