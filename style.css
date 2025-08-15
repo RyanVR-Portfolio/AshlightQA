@@ -134,6 +134,20 @@ footer .icon {
   padding: .5rem;
 }
 
+.h2-step {
+  font-family: "Rokkit", serif;
+  padding: .5rem;
+    color: var(--font-muted);
+
+}
+
+.p-step {
+  font-family: "Roboto", sans-serif;
+  padding: .5rem;
+    color: var(--font-muted);
+
+}
+
 .nav-item {
     font-family: "Rokkit", serif;
     font-weight: 600;
@@ -225,3 +239,4 @@ footer .icon {
 }
 
 /* IDs */
+
