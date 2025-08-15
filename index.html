@@ -44,46 +44,49 @@
   <body>
     <div class="flex-container">
       <div class="container">
-        <header class="container d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
-  <a href="/" class="d-flex align-items-end mb-3 mb-md-0 me-md-auto text-decoration-none">
-    <span class="fs-1 d-flex align-items-end">
-      <img src="assets/AshlightA1.png" class="img-lantern" />
-      <span>
-        <span class="brand-ash"> ASH</span><span class="brand-light">LIGHT</span>
-      </span>
-    </span>
-  </a>
+        <header
+          class="container d-flex flex-wrap justify-content-between align-items-center py-3 mb-4"
+        >
+          <a href="/" class="d-flex align-items-end mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <span class="fs-1 d-flex align-items-end">
+              <img src="assets/AshlightA1.png" class="img-lantern" />
+              <span>
+                <span class="brand-ash"> ASH</span><span class="brand-light">LIGHT</span>
+              </span>
+            </span>
+          </a>
 
-  <nav class="navbar navbar-expand-md navbar-dark" aria-label="navbar">
-  <div class="container-fluid d-flex justify-content-end">
-    <a class="navbar-brand" href="#"></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbar"
-      aria-controls="navbar"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse position-absolute top-100 end-0 mt-2 px-3 py-2 border rounded bg-dark z-3" id="navbar">
-      <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-</header>
-
+          <nav class="navbar navbar-expand-md navbar-dark" aria-label="navbar">
+            <div class="container-fluid d-flex justify-content-end">
+              <a class="navbar-brand" href="#"></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar"
+                aria-controls="navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse position-absolute top-100 end-0 mt-2 px-3 py-2 border rounded bg-dark z-3"
+                id="navbar"
+              >
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
       </div>
 
       <!-- Full Width Jumbo -->
@@ -104,7 +107,12 @@
 
       <!-- Features -->
       <div class="container align-items-stretch">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <h2 class="h2-step text-center col-lg-10 mx-auto my-5">
+          Ashlight brings together practical testing, strategic process design, and a human-first
+          approach to quality—eight core features that adapt to your team’s needs.
+        </h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
           <div class="col d-flex justify-content-center align-items-start features">
             <img src="./assets/MagnifyingGlass.png" class="icon" />
             <div class="feature-card">
@@ -115,6 +123,28 @@
               </p>
             </div>
           </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/RiskAssessment.png" class="icon" />
+            <div class="feature-card">
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Risk Assessment</h3>
+              <p>
+                Quality always has to consider risk. A small change could have site-wide
+                complications. Ashlight builds confidence that your risks are within reason.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/Automation.png" class="icon" />
+            <div class="feature-card">
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Test Automation</h3>
+              <p>
+                Automating tests is easy with the right guide. We will evaluate your needs for
+                automation, provide guides to prepare your system for the easiest path forward, and
+                allow you to build and scale automation tests well into the future.
+              </p>
+            </div>
+          </div>
+
           <div class="col d-flex align-items-start">
             <img src="./assets/ProjectManagement.png" class="icon" />
             <div class="feature-card">
@@ -132,13 +162,14 @@
               <p>A full review of strategy behind your quality and risk processes.</p>
             </div>
           </div>
+
           <div class="col d-flex align-items-start">
-            <img src="./assets/RiskAssessment.png" class="icon" />
+            <img src="./assets/STLC.png" class="icon" />
             <div class="feature-card">
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Risk Assessment</h3>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Software Test LifeCycle</h3>
               <p>
-                Quality always has to consider risk. A small change could have site-wide
-                complications. Ashlight builds confidence that your risks are within reason.
+                Does your SDLC include an STLC? The Software Test Life Cycle is crucial to
+                defect-free development. Ashlight can build them in a flash!
               </p>
             </div>
           </div>
@@ -152,16 +183,7 @@
               </p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <img src="./assets/STLC.png" class="icon" />
-            <div class="feature-card">
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Software Test LifeCycle</h3>
-              <p>
-                Does your SDLC include an STLC? The Software Test Life Cycle is crucial to
-                defect-free development. Ashlight can build them in a flash!
-              </p>
-            </div>
-          </div>
+
           <div class="col d-flex align-items-start">
             <img src="./assets/HumanFirst.png" class="icon" />
             <div class="feature-card">
@@ -173,17 +195,6 @@
               </p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <img src="./assets/Automation.png" class="icon" />
-            <div class="feature-card">
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Test Automation</h3>
-              <p>
-                Automating tests is easy with the right guide. We will evaluate your needs for
-                automation, provide guides to prepare your system for the easiest path forward, and
-                allow you to build and scale automation tests well into the future.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -191,20 +202,22 @@
     <!-- How it works -->
     <!-- Step 1 -->
     <div class="container marketing">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center my-5">
         <div class="col-lg-3 text-center">
+          
           <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
+            aria-label="Step One"
+            class="step-icon"
             xmlns="http://www.w3.org/2000/svg"
+            width="140"
+            height="140"
+            role="img"
           >
             <title>Step One</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            <rect width="100%" height="100%" />
+            <text x="50%" y="55%">1</text>
           </svg>
+
           <h2 class="h2-step">Free Consultation</h2>
           <p class="p-step">
             We start with a 30–60 minute conversation (no cost) to understand your product, goals,
@@ -212,41 +225,44 @@
             first‑day / first‑week plan so you know exactly what working together looks like.
           </p>
         </div>
+
         <!-- Step 2 -->
         <div class="col-lg-3 text-center">
           <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
+            aria-label="Step Two"
+            class="step-icon"
             xmlns="http://www.w3.org/2000/svg"
+            width="140"
+            height="140"
+            role="img"
           >
             <title>Step Two</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            <rect width="100%" height="100%" />
+            <text x="50%" y="55%">2</text>
           </svg>
           <h2 class="h2-step">Discovery and Planning</h2>
           <p class="p-step">
-            Next, we take a guided demo of your system, exactly like a potential client. So we can see how
-            it behaves in the wild. From that, we draft a lightweight QA plan and align on tools,
-            environments, and priorities without forcing new workflows on your team.
+            Next, we take a guided demo of your system, exactly like a potential client. So we can
+            see how it behaves in the wild. From that, we draft a lightweight QA plan and align on
+            tools, environments, and priorities without forcing new workflows on your team.
           </p>
         </div>
+
         <!-- Step 3 -->
         <div class="col-lg-3 text-center">
           <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
+            aria-label="Step Three"
+            class="step-icon"
             xmlns="http://www.w3.org/2000/svg"
+            width="140"
+            height="140"
+            role="img"
           >
             <title>Step Three</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            <rect width="100%" height="100%" />
+            <text x="50%" y="55%">3</text>
           </svg>
+
           <h2 class="h2-step">Day One Baseline</h2>
           <p class="p-step">
             On Day 1 we run baseline end‑to‑end tests to get bearings and surface immediate risks.
@@ -255,19 +271,20 @@
             wins.
           </p>
         </div>
+
         <!-- Step 4 -->
         <div class="col-lg-3 text-center">
           <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
+            aria-label="Step Four"
+            class="step-icon"
             xmlns="http://www.w3.org/2000/svg"
+            width="140"
+            height="140"
+            role="img"
           >
             <title>Step Four</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            <rect width="100%" height="100%" />
+            <text x="50%" y="55%">4</text>
           </svg>
           <h2 class="h2-step">Ongoing Execution</h2>
           <p class="p-step">
@@ -322,28 +339,27 @@
     ></script>
 
     <script>
-  // Close the navbar when clicking outside
-  document.addEventListener("click", function (event) {
-    const nav = document.getElementById("navbar");
-    const toggler = document.querySelector(".navbar-toggler");
-    const isClickInsideNav = nav.contains(event.target);
-    const isClickOnToggler = toggler.contains(event.target);
+      // Close the navbar when clicking outside
+      document.addEventListener('click', function (event) {
+        const nav = document.getElementById('navbar');
+        const toggler = document.querySelector('.navbar-toggler');
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickOnToggler = toggler.contains(event.target);
 
-    if (!isClickInsideNav && !isClickOnToggler && nav.classList.contains("show")) {
-      new bootstrap.Collapse(nav).hide();
-    }
-  });
+        if (!isClickInsideNav && !isClickOnToggler && nav.classList.contains('show')) {
+          new bootstrap.Collapse(nav).hide();
+        }
+      });
 
-  // Optional: close navbar when clicking any nav-link (for single-page nav)
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      const nav = document.getElementById("navbar");
-      if (nav.classList.contains("show")) {
-        new bootstrap.Collapse(nav).hide();
-      }
-    });
-  });
-</script>
-
+      // Optional: close navbar when clicking any nav-link (for single-page nav)
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', () => {
+          const nav = document.getElementById('navbar');
+          if (nav.classList.contains('show')) {
+            new bootstrap.Collapse(nav).hide();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -76,6 +76,28 @@ footer .copyright {
   width: 48px;
 }
 
+.step-icon {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.step-icon rect {
+  fill: var(--bs-secondary-color);
+  rx: 70; /* rounds the corners for perfect circle inside SVG */
+  ry: 70;
+}
+
+.step-icon text {
+  font-family: 'Rokkitt', serif;
+  font-size: 128px;
+  font-weight: 700;
+  fill: var(--orange-bright);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  alignment-baseline: middle;
+}
+
+
 footer .icon {
   height: 48px;
   width: 48px;
