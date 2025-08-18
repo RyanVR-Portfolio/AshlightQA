@@ -89,7 +89,7 @@
           </div>
 
           <!-- Dropdown content, positioned absolutely to avoid pushing layout -->
-          <div
+          <!-- <div
             class="collapse navbar-collapse position-absolute top-100 end-0 mt-2 px-3 py-2 border rounded bg-dark z-3"
             id="navbar"
           >
@@ -107,7 +107,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </header>
       </div>
 
@@ -400,7 +400,7 @@
     <script>
       // Close the navbar when clicking outside
       document.addEventListener('click', function (event) {
-        const nav = document.getElementById('navbar');
+        const nav = document.getElementById('navbarContent');
         const toggler = document.querySelector('.navbar-toggler');
         const isClickInsideNav = nav.contains(event.target);
         const isClickOnToggler = toggler.contains(event.target);
@@ -413,7 +413,7 @@
       // Optional: close navbar when clicking any nav-link (for single-page nav)
       document.querySelectorAll('.nav-link').forEach((link) => {
         link.addEventListener('click', () => {
-          const nav = document.getElementById('navbar');
+          const nav = document.getElementById('navbarContent');
           if (nav.classList.contains('show')) {
             new bootstrap.Collapse(nav).hide();
           }
