@@ -1,20 +1,19 @@
 :root {
---bg-dark: #1B1F3A;
---bg-purple: #1f062b;
---purple-accent: #53354A;
---orange-dark: #A64942;
---orange-bright: #FF7844;
---font-light: #f0f0f0;
---font-muted: #c0c0c0;
---font-ash: #9f9393; 
+  --bg-dark: #1b1f3a;
+  --bg-purple: #1f062b;
+  --purple-accent: #53354a;
+  --orange-dark: #a64942;
+  --orange-bright: #ff7844;
+  --font-light: #f0f0f0;
+  --font-muted: #c0c0c0;
+  --font-ash: #9f9393;
 }
-
 
 /* Elements */
 body {
-    background-color: var(--bg-purple) !important;
-    background-image: url('./assets/washi.png');
-    background-blend-mode: multiply;
+  background-color: var(--bg-purple) !important;
+  background-image: url('./assets/washi.png');
+  background-blend-mode: multiply;
 }
 
 footer {
@@ -28,10 +27,40 @@ footer {
 } */
 
 /* Sections */
+
+.ashlight-brand {
+  font-size: 3rem;
+}
+
+.img-lantern {
+  height: 75px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .ashlight-brand {
+    font-size: 2rem;
+  }
+
+  .img-lantern {
+    height: 50px;
+  }
+
+  .brand-ash,
+  .brand-light {
+    font-size: 2.5rem !important; /* Override if needed */
+  }
+}
+
 .feature-card {
   background-color: var(--font-muted);
   height: 100%;
-  border-radius: .50rem
+  border-radius: 0.5rem;
+}
+
+.about {
+  background-color: var(--font-ash);
+  background-image: url('./assets/escheresque.png');
 }
 
 footer .nav-link {
@@ -53,9 +82,12 @@ footer .copyright {
 }
 
 .jumbo-bg::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
   z-index: 1;
 }
@@ -97,7 +129,6 @@ footer .copyright {
   alignment-baseline: middle;
 }
 
-
 footer .icon {
   height: 48px;
   width: 48px;
@@ -105,117 +136,128 @@ footer .icon {
 
 /* Bootstrap */
 .custom-pill {
-    
-    background-color: var(--purple-accent) !important;
-    color: var(--orange-bright) !important;
-    font-family: "Rokkit", serif !important;
-    font-weight: 600 !important;
-    padding: 0rem 1rem !important;
-    border-radius: 2rem !important;
-    margin: 0rem .25rem !important;
+  background-color: var(--purple-accent) !important;
+  color: var(--orange-bright) !important;
+  font-family: 'Rokkit', serif !important;
+  font-weight: 600 !important;
+  padding: 0rem 1rem !important;
+  border-radius: 2rem !important;
+  margin: 0rem 0.25rem !important;
 }
 
 /* Font */
 .brand-ash {
-    color: var(--font-ash);
-    font-family: "Rokkit", serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 3rem;
+  color: var(--font-ash);
+  font-family: 'Rokkit', serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 .brand-light {
-    color: var(--orange-bright);
-    font-family: "Rokkit", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3rem;
+  color: var(--orange-bright);
+  font-family: 'Rokkit', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 .jumbo-h1 {
   font-weight: 700;
-  font-family: "Rokkit", serif;
+  font-family: 'Rokkit', serif;
   color: var(--font-muted);
 }
 
 .jumbo-p {
   font-weight: 500;
-  font-size: 1.50rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
   color: var(--font-muted);
 }
 
 .feature-card > h3 {
-  font-family: "Rokkit", serif;
-  padding: .5rem;
+  font-family: 'Rokkit', serif;
+  padding: 0.5rem;
 }
 
 .feature-card > p {
-  font-family: "Roboto", sans-serif;
-  padding: .5rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem;
 }
 
 .h2-step {
-  font-family: "Rokkit", serif;
-  padding: .5rem;
-    color: var(--font-muted);
-
+  font-family: 'Rokkit', serif;
+  padding: 0.5rem;
+  color: var(--font-muted);
 }
 
 .p-step {
-  font-family: "Roboto", sans-serif;
-  padding: .5rem;
-    color: var(--font-muted);
-
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem;
+  color: var(--font-muted);
 }
 
 .nav-item {
-    font-family: "Rokkit", serif;
-    font-weight: 600;
-    font-style: italic;
-    font-optical-sizing: auto;
+  font-family: 'Rokkit', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-optical-sizing: auto;
+}
+
+.about h2 {
+  font-family: 'Rokkit', serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+.about p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 0.5rem;
 }
 
 /* Font Snippets */
 /* Cinzel */
 .cinzel-regular {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .cinzel-medium {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
 .cinzel-semibold {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 .cinzel-bold {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 .cinzel-extrabold {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 
 .cinzel-black {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
@@ -223,42 +265,40 @@ footer .icon {
 
 /* Cinzel Decorative */
 .cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
+  font-family: 'Cinzel Decorative', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
+  font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
+  font-family: 'Cinzel Decorative', serif;
   font-weight: 900;
   font-style: normal;
 }
 
 /* Roboto */
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: 'wdth' 100;
 }
 
 /* Rokkit */
 
 /* <weight>: Use a value from 100 to 900 */
 .rokkitt {
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: italic;
 }
 
 /* IDs */
-
