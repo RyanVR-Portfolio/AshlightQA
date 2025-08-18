@@ -205,6 +205,14 @@ footer .icon {
   font-optical-sizing: auto;
 }
 
+.about h1 {
+  font-family: 'Rokkit', serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
 .about h2 {
   font-family: 'Rokkit', serif;
   font-optical-sizing: auto;
