@@ -39,7 +39,7 @@ footer {
 
 @media (max-width: 768px) {
   .ashlight-brand {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .img-lantern {
@@ -48,8 +48,27 @@ footer {
 
   .brand-ash,
   .brand-light {
-    font-size: 2.5rem !important; /* Override if needed */
+    font-size: 2.5rem !important;
   }
+}
+
+.contact-btn {
+  background-color: var(--purple-accent) !important;
+  color: var(--orange-bright) !important;
+  font-family: 'Rokkit', serif !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  border: solid;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: var(--orange-bright) !important;
+  color: var(--bg-dark) !important;
+  transform: scale(1.05);
 }
 
 .feature-card {
