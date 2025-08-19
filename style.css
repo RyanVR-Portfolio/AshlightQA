@@ -12,7 +12,7 @@
 /* Elements */
 body {
   background-color: var(--bg-purple) !important;
-  background-image: url('./assets/washi.png');
+  background-image: url('./assets/bg/washi.png');
   background-blend-mode: multiply;
 }
 
@@ -72,14 +72,15 @@ footer {
 }
 
 .feature-card {
-  background-color: var(--font-muted);
+  background-color: var(--font-ash);
+  background-image: url('./assets/bg/escheresque.png');
   height: 100%;
   border-radius: 0.5rem;
 }
 
 .about {
   background-color: var(--font-ash);
-  background-image: url('./assets/escheresque.png');
+  background-image: url('./assets/bg/escheresque.png');
 }
 
 footer .nav-link {
@@ -107,7 +108,7 @@ footer .copyright {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -134,7 +135,7 @@ footer .copyright {
 
 .step-icon rect {
   fill: var(--bs-secondary-color);
-  rx: 70; /* rounds the corners for perfect circle inside SVG */
+  rx: 70;
   ry: 70;
 }
 
@@ -182,6 +183,16 @@ footer .icon {
   font-size: 3rem;
 }
 
+.qa-tagline {
+  font-size: 0.70rem;
+  font-weight: 400;
+  color: #c0c0c0; /* Adjust to match your theme */
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+  font-family: 'Cinzel', serif; /* Or whatever matches your brand best */
+}
+
+
 .jumbo-h1 {
   font-weight: 700;
   font-family: 'Rokkit', serif;
@@ -197,12 +208,13 @@ footer .icon {
 
 .feature-card > h3 {
   font-family: 'Rokkit', serif;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 .feature-card > p {
   font-family: 'Roboto', sans-serif;
-  padding: 0.5rem;
+    font-weight: 450;
+  padding: .5rem;
 }
 
 .h2-step {
