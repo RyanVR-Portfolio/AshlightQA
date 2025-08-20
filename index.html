@@ -47,17 +47,16 @@
         <header class="container py-3 mb-4">
           <div class="d-flex justify-content-between align-items-center">
             <a href="/" class="d-flex align-items-end text-decoration-none">
-  <div class="ashlight-brand d-flex align-items-end">
-    <img src="assets/AshlightA1.png" class="img-lantern me-2" />
-    <div class="d-flex flex-column align-items-center text-center">
-      <div>
-        <span class="brand-ash">ASH</span><span class="brand-light">LIGHT</span>
-      </div>
-      <small class="qa-tagline">Quality Assurance Specialist</small>
-    </div>
-  </div>
-</a>
-
+              <div class="ashlight-brand d-flex align-items-end">
+                <img src="assets/AshlightA1.png" class="img-lantern me-2" />
+                <div class="d-flex flex-column align-items-center text-center">
+                  <div>
+                    <span class="brand-ash">ASH</span><span class="brand-light">LIGHT</span>
+                  </div>
+                  <small class="qa-tagline">Quality Assurance Specialist</small>
+                </div>
+              </div>
+            </a>
 
             <!-- Navbar toggle stays here -->
             <nav class="navbar navbar-expand-md navbar-dark w-100">
@@ -89,7 +88,7 @@
                       <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="mailto:ryan@ashlight.dev">Contact</a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -348,6 +347,83 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h2-step text-center mb-4">Contact Ashlight</h2>
+
+            <!-- Alerts -->
+            <div
+              id="contactSuccess"
+              class="alert alert-success d-none"
+              role="alert"
+              aria-live="polite"
+            >
+              Thanks! Your message was sent. I’ll reply soon.
+            </div>
+            <div
+              id="contactError"
+              class="alert alert-danger d-none"
+              role="alert"
+              aria-live="polite"
+            >
+              Sorry—something went wrong. You can also email Ashlight directly at
+              <a href="mailto:ryan@ashlight.dev">ryan@ashlight.dev</a>.
+            </div>
+
+            <form id="contactForm" method="POST" class="card p-4 border-0 shadow-sm" novalidate>
+              <!-- Spam protection -->
+              <input
+                type="text"
+                name="_gotcha"
+                class="d-none"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <!-- Form fields -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                  autocomplete="email"
+                  inputmode="email"
+                />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  minlength="10"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please add a short message (10+ characters).</div>
+              </div>
+
+              <button type="submit" class="btn contact-btn" id="contactSubmit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
 
     <footer class="py-3">
@@ -395,7 +471,7 @@
     ></script>
 
     <script>
-      // Close the navbar when clicking outside
+      // Close navbar when clicking outside
       document.addEventListener('click', function (event) {
         const nav = document.getElementById('navbarContent');
         const toggler = document.querySelector('.navbar-toggler');
@@ -407,7 +483,7 @@
         }
       });
 
-      // Optional: close navbar when clicking any nav-link (for single-page nav)
+      // Close navbar when clicking any nav-link
       document.querySelectorAll('.nav-link').forEach((link) => {
         link.addEventListener('click', () => {
           const nav = document.getElementById('navbarContent');
@@ -416,6 +492,72 @@
           }
         });
       });
+    </script>
+
+    <!-- JS for contact form -->
+    <script>
+      (function () {
+        const form = document.getElementById('contactForm');
+        if (!form) return;
+
+        const success = document.getElementById('contactSuccess');
+        const error = document.getElementById('contactError');
+        const btn = document.getElementById('contactSubmit');
+        const show = (el) => el && el.classList.remove('d-none');
+        const hide = (el) => el && el.classList.add('d-none');
+        const setLoading = (on) => {
+          if (!btn) return;
+          btn.disabled = on;
+          btn.textContent = on ? 'Sending…' : 'Send Message';
+        };
+
+        // Formspree endpoint
+        const endpoint = 'https://formspree.io/f/REPLACE_WITH_YOUR_ID';
+
+        // Listener
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+
+          // hide previous alerts
+          hide(success);
+          hide(error);
+
+          // HTML5 validation
+          if (!form.checkValidity()) {
+            form.classList.add('was-validated');
+            return;
+          }
+
+          // Honeypot functionality
+          const trap = form.querySelector('[name="_gotcha"]');
+          if (trap && trap.value) {
+            console.warn('Spam caught (honeypot filled).');
+            return;
+          }
+          setLoading(true);
+          try {
+            const res = await fetch(endpoint, {
+              method: 'POST',
+              headers: { Accept: 'application/json' },
+              body: new FormData(form)
+            });
+
+            if (res.ok) {
+              show(success);
+              form.reset();
+              form.classList.remove('was-validated');
+            } else {
+              show(error);
+            }
+          } catch (err) {
+            show(error);
+          } finally {
+            setLoading(false);
+          }
+        });
+
+        console.log('Contact form ready');
+      })();
     </script>
   </body>
 </html>
