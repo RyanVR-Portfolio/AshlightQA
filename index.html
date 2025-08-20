@@ -48,7 +48,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <a href="/" class="d-flex align-items-end text-decoration-none">
               <div class="ashlight-brand d-flex align-items-end">
-                <img src="assets/AshlightA1.png" class="img-lantern me-2" />
+                <img src="assets/AshlightA1.png" class="img-logo me-2" />
                 <div class="d-flex flex-column align-items-center text-center">
                   <div>
                     <span class="brand-ash">ASH</span><span class="brand-light">LIGHT</span>
@@ -352,7 +352,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2 class="h2-step text-center mb-4">Contact Ashlight</h2>
+            <h2 class="jumbo-h1 text-center mb-4">Contact Ashlight</h2>
 
             <!-- Alerts -->
             <div
@@ -361,7 +361,7 @@
               role="alert"
               aria-live="polite"
             >
-              Thanks! Your message was sent. I’ll reply soon.
+              Your message was sent. Ashlight will contact you soon!
             </div>
             <div
               id="contactError"
@@ -369,11 +369,17 @@
               role="alert"
               aria-live="polite"
             >
-              Sorry—something went wrong. You can also email Ashlight directly at
+              Sorry, something went wrong. You can also email Ashlight directly at
               <a href="mailto:ryan@ashlight.dev">ryan@ashlight.dev</a>.
             </div>
 
-            <form id="contactForm" method="POST" class="card p-4 border-0 shadow-sm" novalidate>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/mblkvqnb"
+              method="POST"
+              class="card p-4 border-0 shadow-sm contact-form"
+              novalidate
+            >
               <!-- Spam protection -->
               <input
                 type="text"

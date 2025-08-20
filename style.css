@@ -32,7 +32,7 @@ footer {
   font-size: 3rem;
 }
 
-.img-lantern {
+.img-logo {
   height: 75px;
   transition: all 0.3s ease;
 }
@@ -42,7 +42,7 @@ footer {
     font-size: 1.75rem;
   }
 
-  .img-lantern {
+  .img-logo {
     height: 50px;
   }
 
@@ -69,6 +69,19 @@ footer {
   background-color: var(--orange-bright) !important;
   color: var(--bg-dark) !important;
   transform: scale(1.05);
+}
+
+.contact-form {
+  background-color: var(--font-ash) !important;
+  background-image: url('./assets/bg/escheresque.png') !important;
+}
+
+.contact-form .form-label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form .invalid-feedback {
+    font-family: 'Roboto', sans-serif;
 }
 
 .feature-card {
@@ -117,7 +130,7 @@ footer .copyright {
   z-index: 2;
 }
 
-.img-lantern {
+.img-logo {
   height: 75px;
   display: inline-block !important;
   vertical-align: bottom !important;
@@ -255,6 +268,10 @@ footer .icon {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   padding: 0.5rem;
+}
+
+h2 .contact {
+  font-family: 'Rokkit', serif;
 }
 
 /* Font Snippets */
