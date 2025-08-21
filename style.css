@@ -7,6 +7,9 @@
   --font-light: #f0f0f0;
   --font-muted: #c0c0c0;
   --font-ash: #9f9393;
+
+  --rokkitt: 'Rokkitt', serif;
+  --roboto: 'Roboto', sans-serif;
 }
 
 /* Elements */
@@ -20,80 +23,9 @@ footer {
   color: var(--orange-bright);
 }
 
-/* Classes */
-/* Flex */
-/* .flex-container {
-  background: none;
-} */
-
-/* Sections */
-
-.ashlight-brand {
-  font-size: 3rem;
-}
-
-.img-logo {
-  height: 75px;
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .ashlight-brand {
-    font-size: 1.75rem;
-  }
-
-  .img-logo {
-    height: 50px;
-  }
-
-  .brand-ash,
-  .brand-light {
-    font-size: 2.5rem !important;
-  }
-}
-
-.contact-btn {
-  background-color: var(--purple-accent) !important;
-  color: var(--orange-bright) !important;
-  font-family: 'Rokkit', serif !important;
-  font-weight: 700 !important;
-  font-size: 1.5rem !important;
-  border: solid;
-  border-radius: 8px;
-  padding: 12px 24px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.contact-btn:hover {
-  background-color: var(--orange-bright) !important;
-  color: var(--bg-dark) !important;
-  transform: scale(1.05);
-}
-
-.contact-form {
-  background-color: var(--font-ash) !important;
-  background-image: url('./assets/bg/escheresque.png') !important;
-}
-
-.contact-form .form-label {
-    font-family: 'Roboto', sans-serif;
-}
-
-.contact-form .invalid-feedback {
-    font-family: 'Roboto', sans-serif;
-}
-
-.feature-card {
-  background-color: var(--font-ash);
-  background-image: url('./assets/bg/escheresque.png');
-  height: 100%;
-  border-radius: 0.5rem;
-}
-
-.about {
-  background-color: var(--font-ash);
-  background-image: url('./assets/bg/escheresque.png');
+footer .icon {
+  height: 48px;
+  width: 48px;
 }
 
 footer .nav-link {
@@ -104,7 +36,165 @@ footer .copyright {
   color: var(--font-muted);
 }
 
-/* Images */
+/* IDs */
+#about,
+#about .bg-paper {
+  background-color: var(--font-ash);
+  background-image: url('./assets/bg/escheresque.png');
+}
+
+#about h1 {
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#about h2 {
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#about p {
+  font-family: var(--roboto);
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+#contact h1 {
+  color: var(--font-muted);
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#contact .bg-paper {
+  background-color: var(--font-ash);
+  background-image: url('./assets/bg/escheresque.png');
+}
+
+#features img {
+  height: 48px;
+  width: 48px;
+}
+
+#features .bg-paper {
+  background-color: var(--font-ash);
+  background-image: url('./assets/bg/escheresque.png');
+}
+
+#features h2 {
+  color: var(--font-muted);
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#process h1 {
+  color: var(--font-muted);
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#process h2 {
+  color: var(--font-muted);
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+/* Classes */
+
+.ashlight-brand {
+  font-size: 3rem;
+}
+
+.asterisk {
+  font-family: var(--roboto);
+  color: orange;
+  font-weight: 900;
+}
+
+.brand-ash {
+  color: var(--font-ash);
+  font-family: var(--rokkitt);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.brand-light {
+  color: var(--orange-bright);
+  font-family: var(--rokkitt);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.btn.contact-btn {
+  background-color: var(--purple-accent);
+  color: var(--orange-bright);
+  font-family: var(--rokkitt);
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: solid;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.contact-btn:hover {
+  background-color: var(--orange-bright);
+  color: var(--bg-dark);
+  transform: scale(1.05);
+}
+
+.contact-form .form-label {
+  font-family: var(--roboto);
+}
+
+.contact-form .invalid-feedback {
+  font-family: var(--roboto);
+}
+
+.feature-card {
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.feature-card h3 {
+  font-family: var(--rokkitt);
+
+  padding: 0.5rem;
+}
+
+.feature-card p {
+  font-family: var(--roboto);
+
+  font-weight: 450;
+  padding: 0.5rem;
+}
+
+.img-logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
 .jumbo-bg {
   position: relative;
   background-image: url('./assets/AshlightPath.png');
@@ -130,15 +220,35 @@ footer .copyright {
   z-index: 2;
 }
 
-.img-logo {
-  height: 75px;
-  display: inline-block !important;
-  vertical-align: bottom !important;
+.jumbo h1 {
+  font-weight: 700;
+  font-family: var(--rokkitt);
+
+  color: var(--font-muted);
 }
 
-.icon {
-  height: 48px;
-  width: 48px;
+.jumbo p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: var(--roboto);
+
+  color: var(--font-muted);
+}
+
+.nav-item {
+  font-family: var(--rokkitt);
+  font-weight: 600;
+  font-style: italic;
+  font-optical-sizing: auto;
+}
+
+.qa-tagline {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--font-muted);
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+  font-family: var(--rokkitt);
 }
 
 .step-icon {
@@ -153,7 +263,9 @@ footer .copyright {
 }
 
 .step-icon text {
-  font-family: 'Rokkitt', serif;
+  /* font-family: 'Rokkitt', serif; */
+  font-family: var(--rokkitt);
+
   font-size: 128px;
   font-weight: 700;
   fill: var(--orange-bright);
@@ -162,137 +274,44 @@ footer .copyright {
   alignment-baseline: middle;
 }
 
-footer .icon {
-  height: 48px;
-  width: 48px;
+.step h2 {
+  /* font-family: 'Rokkit', serif; */
+  font-family: var(--rokkitt);
+
+  padding: 0.5rem;
+  color: var(--font-muted);
 }
 
-/* Bootstrap */
-.custom-pill {
-  background-color: var(--purple-accent) !important;
-  color: var(--orange-bright) !important;
-  font-family: 'Rokkit', serif !important;
-  font-weight: 600 !important;
-  padding: 0rem 1rem !important;
-  border-radius: 2rem !important;
-  margin: 0rem 0.25rem !important;
+.step p {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: var(--roboto);
+
+  padding: 0.5rem;
+  color: var(--font-muted);
 }
 
-/* Font */
-.brand-ash {
-  color: var(--font-ash);
-  font-family: 'Rokkit', serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 3rem;
-}
-
-.brand-light {
-  color: var(--orange-bright);
-  font-family: 'Rokkit', serif;
-  font-optical-sizing: auto;
+.tel-link {
+  color: black;
+  text-decoration: none;
   font-weight: 700;
-  font-style: normal;
-  font-size: 3rem;
+}
+.tel-link:hover,
+.tel-link:focus {
+  text-decoration: underline;
 }
 
-.qa-tagline {
-  font-size: 0.70rem;
-  font-weight: 400;
-  color: #c0c0c0; /* Adjust to match your theme */
-  letter-spacing: 0.5px;
-  margin-top: -10px;
-  font-family: 'Cinzel', serif; /* Or whatever matches your brand best */
+@media (max-width: 768px) {
+  .ashlight-brand {
+    font-size: 1.75rem;
+  }
+
+  .img-logo {
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .ashlight-brand .brand-ash,
+  .ashlight-brand .brand-light {
+    font-size: 2.5rem !important;
+  }
 }
-
-.jumbo-h1 {
-  font-weight: 700;
-  font-family: 'Rokkit', serif;
-  color: var(--font-muted);
-}
-
-.jumbo-p {
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
-  color: var(--font-muted);
-}
-
-.feature-card > h3 {
-  font-family: 'Rokkit', serif;
-  padding: .5rem;
-}
-
-.feature-card > p {
-  font-family: 'Roboto', sans-serif;
-    font-weight: 450;
-  padding: .5rem;
-}
-
-.h2-step {
-  font-family: 'Rokkit', serif;
-  padding: 0.5rem;
-  color: var(--font-muted);
-}
-
-.p-step {
-  font-family: 'Roboto', sans-serif;
-  padding: 0.5rem;
-  color: var(--font-muted);
-}
-
-.nav-item {
-  font-family: 'Rokkit', serif;
-  font-weight: 600;
-  font-style: italic;
-  font-optical-sizing: auto;
-}
-
-.about h1 {
-  font-family: 'Rokkit', serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: italic;
-  padding: 0.5rem;
-}
-
-.about h2 {
-  font-family: 'Rokkit', serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: italic;
-  padding: 0.5rem;
-}
-
-.about p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  padding: 0.5rem;
-}
-
-h2 .contact {
-  font-family: 'Rokkit', serif;
-}
-
-/* Font Snippets */
-/* Roboto */
-
-.roboto-regular {
-  font-family: 'Roboto', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-}
-
-/* Rokkit */
-
-/* <weight>: Use a value from 100 to 900 */
-.rokkitt {
-  font-family: 'Rokkitt', serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: italic;
-}
-
-/* IDs */
