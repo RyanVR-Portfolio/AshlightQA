@@ -19,10 +19,6 @@ body {
   background-blend-mode: multiply;
 }
 
-footer {
-  color: var(--orange-bright);
-}
-
 footer .icon {
   height: 48px;
   width: 48px;
@@ -93,7 +89,7 @@ footer .copyright {
   color: var(--font-muted);
   font-family: var(--rokkitt);
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 600;
   font-style: italic;
   padding: 0.5rem;
 }
@@ -117,7 +113,6 @@ footer .copyright {
 }
 
 /* Classes */
-
 .ashlight-brand {
   font-size: 3rem;
 }
@@ -131,7 +126,7 @@ footer .copyright {
 .brand-ash {
   color: var(--font-ash);
   font-family: var(--rokkitt);
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 3rem;
 }
@@ -140,7 +135,7 @@ footer .copyright {
   color: var(--orange-bright);
   font-family: var(--rokkitt);
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 3rem;
 }
@@ -243,7 +238,7 @@ footer .copyright {
 }
 
 .qa-tagline {
-  font-size: 0.7rem;
+  font-size:.8rem;
   font-weight: 400;
   color: var(--font-muted);
   letter-spacing: 0.5px;
