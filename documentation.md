@@ -1,32 +1,14 @@
 ## Fonts
 
-### Cinzel
-<weight>: Use a value from 400 to 900
+### Rokkit
 
-.cinzel {
-  font-family: "Cinzel", serif;
+// <weight>: Use a value from 100 to 900
+
+.rokkit {
+  font-family: 'Rokkit', serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-### Cinzel Deco
-.cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: 600;
+  font-style: italic;
 }
 
 ### Roboto
